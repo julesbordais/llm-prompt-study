@@ -1,0 +1,2 @@
+model,strategy,case_id,faithfulness,actionability
+# Fill ~15 rows yourself (1-5 scale, same anchors as docs/rubric.md), then rename to human_spotcheck.csv. Delete this comment line.

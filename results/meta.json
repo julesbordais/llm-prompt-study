@@ -1,0 +1,34 @@
+{
+  "gen_models": [
+    "openrouter:openai/gpt-4o-mini",
+    "openrouter:mistralai/mistral-small-3.2-24b-instruct"
+  ],
+  "judge_model": "openrouter:anthropic/claude-haiku-5.5",
+  "strategies": [
+    "zero_shot",
+    "few_shot",
+    "chain_of_thought"
+  ],
+  "repeats": 1,
+  "temperature": 0.0,
+  "n_cases": 30,
+  "mock": false,
+  "generation_usage": {
+    "calls": 180,
+    "cached_calls": 0,
+    "input_tokens": 139614,
+    "output_tokens": 19713,
+    "cost_usd": 0.02143030000000001,
+    "retries": 0
+  },
+  "judge_usage": {
+    "calls": 814,
+    "cached_calls": 2,
+    "input_tokens": 484448,
+    "output_tokens": 277860,
+    "cost_usd": 0.1873748000000001,
+    "retries": 0
+  },
+  "cache_hits": 2,
+  "cache_misses": 992
+}

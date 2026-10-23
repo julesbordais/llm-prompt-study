@@ -1,0 +1,9 @@
+{
+  "_comment": "USD per 1M tokens. Fill from each provider's official pricing page before your final run; values left null are reported as n/a. Token counts are always logged, so costs can be recomputed later with scripts/make_report.py.",
+  "gpt-4o-mini": {"input_per_mtok": null, "output_per_mtok": null},
+  "mistral-small-latest": {"input_per_mtok": null, "output_per_mtok": null},
+  "claude-3-5-haiku-latest": {"input_per_mtok": null, "output_per_mtok": null},
+  "mock-small": {"input_per_mtok": 0.15, "output_per_mtok": 0.60},
+  "mock-large": {"input_per_mtok": 2.50, "output_per_mtok": 10.00},
+  "mock-judge": {"input_per_mtok": 1.00, "output_per_mtok": 4.00}
+}
