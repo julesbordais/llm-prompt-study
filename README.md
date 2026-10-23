@@ -44,20 +44,3 @@ src/promptstudy/
   mock.py        offline deterministic mock (testing only)
 tests/       unit + end-to-end tests
 ```
-
-## What you still need to do (≈ 2–3 h)
-1. Run `scripts/check_openrouter.py`; if a slug is MISSING, replace it in `.env` with one it suggests. Costs come directly from OpenRouter, so `pricing.json` is optional.
-2. Run the full study (`--pairwise`, optionally `--repeats 3`).
-3. Hand-score ~15 outputs into `data/human_spotcheck.csv`, re-run `--report-only`.
-4. Read `results/runs.jsonl` for the failing cases and write the interpretation paragraphs in REPORT.md §4 and §6.
-5. Build the 8 slides from `docs/defense_outline.md` using the generated figures.
-
-## Git
-The grade requires a real commit history. Commit as you go, e.g.:
-`chore: project scaffold` → `feat: provider adapters + retry` → `feat: pydantic schema + repair loop` →
-`data: 30 golden cases` → `feat: 3 prompting strategies` → `feat: LLM judge with bias controls` →
-`feat: report + Pareto` → `test: unit + e2e` → `results: full run <date>` → `docs: failure analysis + recommendation`.
-Never commit `.env`.
-
-## Analysis
-Interpretation, failure modes and deployment recommendation: [docs/analysis.md](docs/analysis.md)
