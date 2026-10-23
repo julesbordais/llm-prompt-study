@@ -58,3 +58,6 @@ The grade requires a real commit history. Commit as you go, e.g.:
 `data: 30 golden cases` → `feat: 3 prompting strategies` → `feat: LLM judge with bias controls` →
 `feat: report + Pareto` → `test: unit + e2e` → `results: full run <date>` → `docs: failure analysis + recommendation`.
 Never commit `.env`.
+
+## Analysis
+Interpretation, failure modes and deployment recommendation: [docs/analysis.md](docs/analysis.md)
