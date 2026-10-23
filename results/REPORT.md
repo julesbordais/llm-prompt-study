@@ -65,7 +65,7 @@ root cause (definition ambiguity? missing example? reasoning drift?), and the fi
 | openrouter:openai/gpt-4o-mini | zero_shot | chain_of_thought | 6 | 0 | 18 | 6 |
 | openrouter:openai/gpt-4o-mini | zero_shot | few_shot | 0 | 12 | 16 | 2 |
 
-- **Human calibration:** No human spot-check file found (`data/human_spotcheck.csv`).
+- **Human calibration:** Human vs judge on 15 items: agreement within ±1 point = 33% (faithfulness), 53% (actionability).
 
 ## 6. Deployment recommendation
 **Recommended variant: mistralai/mistral-small-3.2-24b-instruct / Few-shot** — composite 0.960 (95% CI 0.944–0.973), first-try schema validity 100%, median latency 1.04s, ≈ $0.10 per 1,000 tickets. It has zero schema failures and zero injection failures on the test set. Note: its CI overlaps with mistralai/mistral-small-3.2-24b-instruct / Zero-shot — with n=30 the ranking between those variants is not statistically conclusive.
